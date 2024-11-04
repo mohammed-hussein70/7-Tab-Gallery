@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Gallery</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- gallery image  -->
+    <div class="container">
+      <div class="images">
+        <img src="images/1.jpeg" style="width: 100%" alt="Nature" />
+      </div>
+      <div class="images">
+        <img src="images/2.jpeg" style="width: 100%" alt="Snow" />
+      </div>
+      <div class="images">
+        <img src="images/3.jpeg" style="width: 100%" alt="Mountains" />
+      </div>
+      <div class="images">
+        <img src="images/4.jpeg" style="width: 100%" alt="Lights" />
+      </div>
+    </div>
+    <!-- show image  -->
+    <div class="show">
+      <!-- close bottom  -->
+      <span class="closeBtn">&times;</span>
+      <img id="expandedImg" style="width: 100%; max-width: 800px" />
+      <div id="imgtext"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

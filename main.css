@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.container .images {
+  float: left;
+  width: 15%;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container .images img {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.show {
+  display: none;
+  position: relative;
+  display: none;
+  padding: 20px;
+}
+.show .closeBtn {
+  position: absolute;
+  left: 50%;
+  font-size: 30px;
+  padding: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+    color: red;
+  }
+}
